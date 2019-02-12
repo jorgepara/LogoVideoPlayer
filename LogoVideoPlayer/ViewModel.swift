@@ -14,6 +14,7 @@ typealias SceneUpdateBlock = () -> Void
 enum Institution {
     case GregorioFernandez
     case UBU
+    case POLIZ
 
     var videoName: String {
         switch self {
@@ -21,6 +22,8 @@ enum Institution {
             return "gf.mp4"
         case .UBU:
             return "ubu.mp4"
+        case .POLIZ:
+            return "poliz.mp4"
         }
     }
 
@@ -30,6 +33,8 @@ enum Institution {
             return .GregorioFernandez
         case "ubu":
             return .UBU
+        case "poliz":
+            return .POLIZ
         default:
             return nil
         }
